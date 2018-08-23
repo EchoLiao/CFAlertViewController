@@ -40,7 +40,7 @@ public class CFAlertActionTableViewCell: UITableViewCell {
     // MARK: - Variables
     // MARK: Public
     public static func identifier() -> String    {
-        return String(describing: CFAlertActionTableViewCell.self)
+        return "CFAlertActionTableViewCell"
     }
     public weak var delegate: CFAlertActionTableViewCellDelegate?
     public var actionButtonTopMargin: CGFloat = 0.0 {

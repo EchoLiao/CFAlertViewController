@@ -17,7 +17,7 @@ public class CFAlertTitleSubtitleTableViewCell: UITableViewCell {
     // MARK: - Variables
     // MARK: Public
     public static func identifier() -> String    {
-        return String(describing: CFAlertTitleSubtitleTableViewCell.self)
+        return "CFAlertTitleSubtitleTableViewCell"
     }
     @IBOutlet public var titleLabel: UILabel?
     @IBOutlet public var subtitleLabel: UILabel?
