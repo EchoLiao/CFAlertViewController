@@ -428,7 +428,7 @@ open class CFAlertViewController: UIViewController    {
             if action.style == .Cancel {
                 for existingAction: CFAlertAction in actionList {
                     // It means this alert already contains a Cancel action. Throw an Assert so developer understands the reason.
-                    assert(existingAction.style != .Cancel, "ERROR : CFAlertViewController can only have one action with a style of CFAlertActionStyle.Cancel")
+//                    assert(existingAction.style != .Cancel, "ERROR : CFAlertViewController can only have one action with a style of CFAlertActionStyle.Cancel")
                 }
             }
             // Add Action Into List
@@ -452,7 +452,7 @@ open class CFAlertViewController: UIViewController    {
                 if existingAction.style == .Cancel {
                     // Call Action Handler
                     if let actionHandler = existingAction.handler {
-                        actionHandler(existingAction)
+//                        actionHandler(existingAction)
                     }
                 }
             }
