@@ -64,8 +64,8 @@ open class CFAlertViewController: UIViewController    {
                     
                     let width = (self.view.frame.size.width * 60) / 100   // 60% of the full width
                     self.tableViewWidthConstraint?.constant = max(500, min(width, 620))
-                    self.tableViewLeadingConstraint?.priority = UILayoutPriority(rawValue: 749)
-                    self.tableViewTrailingConstraint?.priority = UILayoutPriority(rawValue: 749)
+                    self.tableViewLeadingConstraint?.priority = UILayoutPriority(749)
+                    self.tableViewTrailingConstraint?.priority = UILayoutPriority(749)
                     
                     if #available(iOS 11.0, *) {
                         // NOTE : For iOS 11 we don't need to adjust status bar as safe area layout guide manages it automatically
@@ -92,8 +92,8 @@ open class CFAlertViewController: UIViewController    {
                     self.containerViewTrailingConstraint?.constant = 10
                     
                     self.tableViewWidthConstraint?.constant = 500
-                    self.tableViewLeadingConstraint?.priority = UILayoutPriority(rawValue: 751)
-                    self.tableViewTrailingConstraint?.priority = UILayoutPriority(rawValue: 751)
+                    self.tableViewLeadingConstraint?.priority = UILayoutPriority(751)
+                    self.tableViewTrailingConstraint?.priority = UILayoutPriority(751)
                 }
                 else if self.preferredStyle == .actionSheet {
                     
@@ -109,8 +109,8 @@ open class CFAlertViewController: UIViewController    {
                     self.containerViewTrailingConstraint?.constant = 10
                     
                     self.tableViewWidthConstraint?.constant = 500
-                    self.tableViewLeadingConstraint?.priority = UILayoutPriority(rawValue: 751)
-                    self.tableViewTrailingConstraint?.priority = UILayoutPriority(rawValue: 751)
+                    self.tableViewLeadingConstraint?.priority = UILayoutPriority(751)
+                    self.tableViewTrailingConstraint?.priority = UILayoutPriority(751)
                 }
                 
                 // Layout Full View
