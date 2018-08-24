@@ -30,7 +30,7 @@ open class CFAlertViewController: UIViewController    {
         case blur
     }
     @objc open static func CF_ALERT_DEFAULT_BACKGROUND_COLOR() -> UIColor   {
-        return UIColor(white: 0.0, alpha: 0.7)
+        return UIColor(white: 0.0, alpha: 0.5)
     }
     @objc open static func CF_ALERT_DEFAULT_CONTAINER_VIEW_BACKGROUND_COLOR() -> UIColor   {
         return UIColor.white
