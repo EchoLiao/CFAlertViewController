@@ -180,7 +180,9 @@ open class CFAlertViewController: UIViewController    {
     // The view which holds the popup UI
     // You can change corner radius or background color of this view for additional customisation
     @objc @IBOutlet public weak var containerView: UIView?
-    
+
+    @objc public var tapBackgroundAction: (() -> ())?
+
     // MARK: Private / Internal
     internal var titleString: String?
     internal var titleColor: UIColor = CFAlertViewController.CF_ALERT_DEFAULT_TITLE_COLOR()
@@ -417,8 +419,8 @@ open class CFAlertViewController: UIViewController    {
         // Update UI
         updateUI(withAnimation: false)
     }
-    
-    
+
+
     // MARK: - Helper Methods
     @objc public func addAction(_ action: CFAlertAction?) {
         
@@ -456,6 +458,7 @@ open class CFAlertViewController: UIViewController    {
                     }
                 }
             }
+            self.tapBackgroundAction?()
             // Call Completion
             completion?()
         })
